@@ -1,26 +1,26 @@
 JSON
- 4. Ñîçäàòü âíåøíèé ðåïîçèòîðèé c íàçâàíèåì JSON.====		в GitHub: Repository-New-Repository name (JSON)-Public-Add a ReadMe file-Create Repository
- 5. Êëîíèðîâàòü ðåïîçèòîðèé JSON íà ëîêàëüíûé êîìïüþòåð.==== 	â GitHub: Code-ñêîïèðîâàòü Url
-								â GitBash: git clone ñêîïèðîâàííûé Url
- 6. Âíóòðè ëîêàëüíîãî JSON ñîçäàòü ôàéë “new.json”.====		cd JSON
+ 4. Создать внешний репозиторий c названием JSON.====		в GitHub: Repository-New-Repository name (JSON)-Public-Add a ReadMe file-Create Repository
+ 5. Клонировать репозиторий JSON на локальный компьютер.==== 	в GitHub: Code-ñêîïèðîâàòü Url
+								в GitBash: git clone ñêîïèðîâàííûé Url
+ 6. Внутри локального JSON создать файл “new.json”.====		cd JSON
 								touch new.json (cat > new.json)
 
- 7. Äîáàâèòü ôàéë ïîä ãèò.==== 					git add new.json
- 8. Çàêîììèòèòü ôàéë.====					git commit -m "New file"
- 9. Îòïðàâèòü ôàéë íà âíåøíèé GitHub ðåïîçèòîðèé.====		git push
- 10. Îòðåäàêòèðîâàòü ñîäåðæàíèå ôàéëà “new.json”====		cat > new.json
+ 7. Добавить файл под гит.==== 					git add new.json
+ 8. Закоммитить файл.====					git commit -m "New file"
+ 9. Отправить файл на внешний GitHub репозиторий.====		git push
+ 10. Отредактировать содержание файла “new.json”====		cat > new.json
 								{"Name":"Alla",
 								"Surname":"Besedina",
 								"age":37,
 								"Pet":"1(Hamster)",
 								"Pay":"700-900$"}
 
- - íàïèñàòü èíôîðìàöèþ î ñåáå (ÔÈÎ, âîçðàñò, êîëè÷åñòâî äîìàøíèõ æèâîòíûõ, áóäóùàÿ æåëàåìàÿ çàðïëàòà). Âñ¸ íàïèñàòü â ôîðìàòå JSON.
- 11. Îòïðàâèòü èçìåíåíèÿ íà âíåøíèé ðåïîçèòîðèé.==== 		git add new.json
+  - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+ 11. Отправить изменения на внешний репозиторий.==== 		git add new.json
 								git commit -m "Changes"
 								git push
- 12. Ñîçäàòü ôàéë preferences.json ====				touch preferences.json
- 13. Â ôàéë preferences.json ==== 				vim preferences.json
+ 12.Создать файл preferences.json ====				touch preferences.json
+ 13.В файл preferences.json ==== 				vim preferences.json
 								i 
 								{"film":"Forrest Gump",
 								"serial":"This is Us",
@@ -29,8 +29,8 @@ JSON
 								"Country":"Italy"}
 
 								esc :wq
-äîáàâèòü èíôîðìàöèþ î ñâîèõ ïðåäïî÷òåíèÿõ (Ëþáèìûé ôèëüì, ëþáèìûé ñåðèàë, ëþáèìàÿ åäà, ëþáèìîå âðåìÿ ãîäà, ñòîðîíà êîòîðóþ õîòåëè áû ïîñåòèòü) â ôîðìàòå JSON.
- 14. Ñîçäàòü ôàéë sklls.json äîáàâèòü èíôîðìàöèþ î ñêèëëàõ êîòîðûå áóäóò èçó÷åíû íà êóðñå â ôîðìàòå JSON
+добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
 								cat > skills.json
 								{"skill_1":"GitBash",
 								"skill_2":"GitHub",
@@ -41,13 +41,13 @@ JSON
 								"skill_7":"SQL",
 								"skill_8":"DevTools"}
 
- 15. Îòïðàâèòü ñðàçó 2 ôàéëà íà âíåøíèé ðåïîçèòîðèé.==== 	git add .
+ 15. Отправить сразу 2 файла на внешний репозиторий.==== 	git add .
 								git commit -m "Two files together"
 								git push
- 16. Íà âåá èíòåðôåéñå ñîçäàòü ôàéë bug_report.json.==== 	â GitHub:Add file-create new file-Name(bug_report.json)
- 17. Ñäåëàòü Commit changes (ñîõðàíèòü) èçìåíåíèÿ íà âåá èíòåðôåéñå.==== â GitHub: Commit new file
- 18. Íà âåá èíòåðôåéñå ìîäèôèöèðîâàòü ôàéë bug_report.json, äîáàâèòü áàã ðåïîðò â ôîðìàòå JSON.====
-								âûáðàòü ôàéë-Edit file (çíàê êàðàíäàøà)-
+ 16. На веб интерфейсе создать файл bug_report.json.==== 	в GitHub:Add file-create new file-Name(bug_report.json)
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.==== в GitHub: Commit new file
+ 18.На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате====
+								выбрать файл-Edit file (знак карандаша)-
 								{"ID":"B1",
 								"Project Name":"Abracadabra",
 								"Version":"1.0",
@@ -63,14 +63,14 @@ JSON
 								"Assigned by":"Ksendzov Vadim",
 								"Status":"Open"
 								}
- 19. Ñäåëàòü Commit changes (ñîõðàíèòü) èçìåíåíèÿ íà âåá èíòåðôåéñå.==== Commit changes
- 20. Ñèíõðîíèçèðîâàòü âíåøíèé è ëîêàëüíûé ðåïîçèòîðèé JSON ====	git fetch
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.==== Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON ====	git fetch
 								git pull
 
 
 XML
- 21. Ñîçäàòü âíåøíèé ðåïîçèòîðèé c íàçâàíèåì XML.==== 		â GitHub: Repository-New-Repository name (XML)-Public-Add a ReadMe file-Create Repository
- 22. Êëîíèðîâàòü ðåïîçèòîðèé XML íà ëîêàëüíûé êîìïüþòåð.==== 	â GitHub: Code-ñêîïèðîâàòü Url
+ 21. Создать внешний репозиторий c названием XML.==== 		â GitHub: Repository-New-Repository name (XML)-Public-Add a ReadMe file-Create Repository
+ 22. Синхронизировать внешний и локальный репозиторий JSON==== 	â GitHub: Code-ñêîïèðîâàòü Url
 								â GitBash: git clone ñêîïèðîâàííûé Url
  23. Âíóòðè ëîêàëüíîãî XML ñîçäàòü ôàéë “new.xml”.====		cd XML
 								touch new.xml 
@@ -167,7 +167,7 @@ XML
 
 
 TXT
- 1. Ñîçäàòü âíåøíèé ðåïîçèòîðèé c íàçâàíèåì TXT.====		â GitHub: Repository-New-Repository name (TXT)-Public-Add a ReadMe file-Create Repository
+ 1. Создать внешний репозиторий c названием TXT.====		â GitHub: Repository-New-Repository name (TXT)-Public-Add a ReadMe file-Create Repository
  2. Êëîíèðîâàòü ðåïîçèòîðèé TXT íà ëîêàëüíûé êîìïüþòåð.==== 	â GitHub: Code-ñêîïèðîâàòü Url
 								â GitBash: git clone ñêîïèðîâàííûé Url
  3. Âíóòðè ëîêàëüíîãî TXT ñîçäàòü ôàéë “new.txt”.==== 		touch new.txt
